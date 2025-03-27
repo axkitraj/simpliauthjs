@@ -1,0 +1,62 @@
+{
+  "name": "simpliauthjs",
+  "version": "1.0.3",
+  "description": "SimpliAuthJs is a simple, secure, and easy-to-integrate authentication solution for web and mobile apps. It supports various authentication methods, including magic link sign-ins, social logins like Google and GitHub, and more. With minimal setup, SimpliAuthJs streamlines user authentication, ensuring seamless login, sign-up, and account management. It's the perfect choice for developers who want to quickly and efficiently implement secure authentication.",
+  "homepage": "https://github.com/axkitraj/simpliauthjs#readme",
+  "bugs": {
+    "url": "https://github.com/axkitraj/simpliauthjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axkitraj/simpliauthjs.git"
+  },
+  "keywords": [
+    "authentication",
+    "auth",
+    "magic-link",
+    "social-login",
+    "jwt",
+    "express",
+    "typescript",
+    "javascript"
+  ],
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/types/index.d.ts"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mysql2": "^3.14.0",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/nodemailer": "^6.4.17",
+    "typescript": "^5.8.2"
+  }
+}
