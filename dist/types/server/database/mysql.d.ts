@@ -1,5 +1,5 @@
 import { Connection, RowDataPacket, ResultSetHeader } from 'mysql2/promise.js';
-export type typeMySqlDb = mysqlDb;
+export type TypeMySqlDb = mysqlDb;
 declare class mysqlDb {
     private database;
     constructor(database: Connection);

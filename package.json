@@ -1,6 +1,6 @@
 {
   "name": "simpliauthjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SimpliAuthJs is a simple, secure, and easy-to-integrate authentication solution for web and mobile apps. It supports various authentication methods, including magic link sign-ins, social logins like Google and GitHub, and more. With minimal setup, SimpliAuthJs streamlines user authentication, ensuring seamless login, sign-up, and account management. It's the perfect choice for developers who want to quickly and efficiently implement secure authentication.",
   "homepage": "https://github.com/axkitraj/simpliauthjs#readme",
   "bugs": {
@@ -45,18 +45,20 @@
     "axios": "^1.8.4",
     "bcryptjs": "^3.0.2",
     "colors": "^1.4.0",
-    "cors": "^2.8.5",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "jwt-decode": "^4.0.0",
+    "mongodb": "^6.15.0",
     "mysql2": "^3.14.0",
-    "nodemailer": "^6.10.0"
+    "nodemailer": "^6.10.0",
+    "pg": "^8.14.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongodb": "^4.0.6",
     "@types/nodemailer": "^6.4.17",
+    "@types/pg": "^8.11.11",
     "typescript": "^5.8.2"
   }
 }

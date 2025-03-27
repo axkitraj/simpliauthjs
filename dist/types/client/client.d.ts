@@ -18,6 +18,7 @@ export default class SimpliAuthClient {
     private handleRequest;
     SignOut(): void;
     IsAuthenticated(): boolean;
+    VerifyEmail(email: string): Promise<ClientResponse>;
     AuthUser(): Promise<ClientResponse>;
     SignIn(email: string, password: string, verificationCode?: string): Promise<ClientResponse>;
     SignInWithMagicLink(email: string): Promise<ClientResponse>;

@@ -41,6 +41,9 @@ export default class SimpliAuthClient {
         }
         return false;
     }
+    async VerifyEmail(email) {
+        return this.handleRequest('POST', 'email-validation', { email });
+    }
     async AuthUser() {
         const token = localStorage?.getItem(this.tokenName);
         return this.handleRequest('GET', 'user', {}, token);

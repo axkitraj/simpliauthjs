@@ -24,7 +24,7 @@ npm install simpliauthjs
 
 - **Secure Cookies:** Supports cookie-based authentication for secure, persistent sessions.
 
-- **Database Integration:** Seamlessly integrates with MySQL for storing and managing user data.
+- **Database Integration:** Seamlessly integrates with MongoDb, MySQL and PostgresSQL for storing and managing user data.
 
 - **Minimal Setup:** Quick and simple configuration for developers with customizable options.
 
@@ -38,13 +38,15 @@ npm install simpliauthjs
 import simpliauth from "simpliauthjs";
 
 const simpliClient = simpliauth.client("https://your-server.com", "your-token-name");
+
 ```
 
 **Server Setup**
 
 ```bash
 import express from "express";
-import mysql from "mysql2";
+({/* import database of your choice. eg: mysql */})
+
 import simpliauth, { simpliMysql, simpliMailer } from "simpliauthjs";
 
 const connection = await mysql.createConnection({ /* MySQL Config */ });
@@ -71,13 +73,21 @@ app.listen(port, () => console.log(`Server is running at Port:${port}`));
 
 ## Documentation
 
-[Documentation](https://axkitraj.github.io/simpliauthjs/)
+Explore the complete documentation [here.](https://axkitraj.github.io/simpliauthjs/)
 
 ## Authors
 
-- [SimpliAuth](https://)
-- [@axkitraj](https://github.com/axkitraj)
+- **[SimpliAuth](https://simpliauth.netlify.app)**
+- **[Ankit Raj](https://github.com/axkitraj)**
+
+## Links
+
+[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/axkitraj/simpliauthjs/) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/axkit-raj/) [![portfolio](https://img.shields.io/badge/portfolio-ff9800?style=for-the-badge&logo=portfolio&logoColor=white)](https://axkitraj.netlify.app) [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/axkitraj/) [![support](https://img.shields.io/badge/support-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/axkitraj)
+
+## Donate
+
+Please consider donating if you think SimpliAuthJs is helpful to you or that my work is valuable. I am happy if you can help me [buy me a cup of coffee](https://buymeacoffee.com/axkitraj).
 
 ## License
 
-SimpliAuthJs is distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file for more info.
+SimpliAuthJs is distributed under the [MIT License.](https://github.com/axkitraj/simpliauthjs/blob/main/LICENCE)

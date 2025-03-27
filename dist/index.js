@@ -1,6 +1,8 @@
 import SimpliAuthClient from "./client/client.js";
 import SimpliAuthServer from "./server/server.js";
 import simpliMysql from "./server/database/mysql.js";
+import simpliMongoDb from "./server/database/mongo.js";
+import simpliPostgres from "./server/database/postgres.js";
 import simpliMailer from "./server/mailer.js";
 class SimpliAuth {
     client(serverUrl, tokenName) {
@@ -12,4 +14,4 @@ class SimpliAuth {
 }
 const simpliauth = new SimpliAuth();
 export default simpliauth;
-export { simpliMailer, simpliMysql };
+export { simpliMailer, simpliMysql, simpliPostgres, simpliMongoDb };

@@ -1,4 +1,4 @@
-export type typeMailer = Mailer;
+export type TypeMailer = Mailer;
 declare class Mailer {
     private sender;
     private email;
